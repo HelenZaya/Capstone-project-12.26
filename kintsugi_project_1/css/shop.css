@@ -1,0 +1,147 @@
+/* ===== SHOP LAYOUT ===== */
+.shop {
+  padding: 40px 60px;
+  background: #fafafa;
+}
+
+/* HEADER */
+.shop-header {
+  margin-bottom: 30px;
+}
+
+.shop-header h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.shop-header p {
+  color: #777;
+}
+
+/* GRID */
+.shop-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+}
+
+/* ===== SIDEBAR ===== */
+.shop-sidebar {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.filter {
+  margin-bottom: 30px;
+}
+
+.filter h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* FILTER BUTTONS */
+.filter button {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.filter button:hover {
+  background: #e5e5e5;
+}
+
+.filter button.active {
+  background: #000;
+  color: #fff;
+}
+
+/* SIZE BUTTONS */
+.sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sizes button {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+/* PRICE RANGE */
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* ===== PRODUCTS GRID ===== */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.product-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h4 {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.product-card p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* BUY BUTTON */
+.product-card .buy-btn {
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product-card .buy-btn:hover {
+  background: #222;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .shop-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .shop {
+    padding: 20px;
+  }
+}
