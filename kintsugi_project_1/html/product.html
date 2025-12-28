@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product</title>
+  <link rel="stylesheet" href="/css/product.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/theme.css" />
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo" onclick="">6
+            <img src="/assets/img/no-background-logo.png" alt="404 error">
+            <!-- <p>KINTSUGI</p> -->
+        </div>
+        <nav class="nav-links">
+            <a href="/html/home.html" data-i18n="nav.home">Home</a>
+            <a href="/html/shop.html" data-i18n="nav.shop">Shop</a>
+            <a href="/html/about.html" data-i18n="nav.about">About</a>
+            <a href="/html/contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="cart.html" class="cart-link">
+                🛒 <span id="cart-count"></span>
+            </a>
+            <button class="lang active">EN</button>
+            <button class="lang">MN</button>
+            <button class="theme">🌙</button>
+        </div>
+    </header>
+
+    <main class="product-page">
+      <div class="product-image">
+        <img id="productImage" src="" alt="">
+      </div>
+
+      <div class="product-info">
+        <h1 id="productName"></h1>
+        <p class="price" id="productPrice"></p>
+        <p class="desc" id="productDesc"></p>
+
+        <button id="addToCartBtn">Add to Cart</button>
+      </div>
+    </main>
+
+    <script type="module" src="/js/pages/product.js"></script>
+    <script type="module" src="/js/pages/main.js"></script>
+    <script type="module" src="/js/i18n.js"></script>    
+</body>
+</html>

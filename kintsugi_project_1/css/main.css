@@ -1,0 +1,379 @@
+/* =====================
+   RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* =====================
+   SAFE TRANSITIONS (NO BUG)
+===================== */
+body,
+.navbar,
+.footer,
+.philosophy,
+.product,
+.lang,
+.theme,
+.outline-btn,
+.dark-btn {
+  transition: background-color 0.25s ease,
+              color 0.25s ease,
+              border-color 0.25s ease;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+  height: 80px;
+  padding: 0 60px 0 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  display: flex;
+  width: 80px;
+  height: 50px;
+}
+
+.nav-links a {
+  margin: 0 18px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-link {
+  text-decoration: none;
+  color: var(--text);
+}
+
+/* =====================
+   NAV BUTTONS
+===================== */
+.lang {
+  border: none;
+  background: var(--bg-soft);
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.lang.active {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+.theme {
+  border: none;
+  background: var(--bg-soft);
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--text);
+  z-index: 2000;
+  position: relative;
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+  position: relative;
+  height: calc(100vh - 80px);
+  background-image: url("https://images.unsplash.com/photo-1599058917212-d750089bc07e");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 72px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+/* =====================
+   HERO BUTTONS
+===================== */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.btn.primary {
+  background: #fff;
+  color: #000;
+  border: none;
+}
+
+.btn.outline {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* =====================
+   SLIDER DOTS
+===================== */
+.slider-dots {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  gap: 8px;
+}
+
+.slider-dots span {
+  width: 8px;
+  height: 8px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+}
+
+.slider-dots span.active {
+  width: 22px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+section:not(.featured),
+.Collection_container,
+.philosophy {
+  padding: 0 80px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  margin-bottom: 60px;
+}
+
+/* =====================
+   PRODUCTS
+===================== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 56px 0 60px;
+}
+
+.product img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+.product h4 {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.product span {
+  color: var(--text-muted);
+}
+
+/* =====================
+   ACTION BUTTONS
+===================== */
+.outline-btn {
+  padding: 14px 36px;
+  border: 1px solid var(--text);
+  background: transparent;
+  cursor: pointer;
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.dark-btn {
+  padding: 14px 36px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 30px;
+  width: 150px;
+  align-self: center;
+}
+
+/* =====================
+   CATEGORIES
+===================== */
+
+.categories h2 {
+    margin-top: 56px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 56px 0 72px;
+}
+
+.category {
+  position: relative;
+}
+
+.category img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.category span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* =====================
+   PHILOSOPHY
+===================== */
+.philosophy {
+  background: var(--bg-soft);
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.philosophy p {
+  max-width: 700px;
+  margin: 30px auto 40px;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  padding: 30px 80px;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer h3 {
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+}
+
+.footer a {
+  display: block;
+  text-decoration: none;
+  color: var(--text-soft);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer p {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 900px) {
+  .product-grid,
+  .category-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+}
