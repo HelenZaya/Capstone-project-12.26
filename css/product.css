@@ -1,36 +1,109 @@
+/* =========================
+   PRODUCT PAGE LAYOUT
+========================= */
 .product-page {
   display: flex;
   gap: 80px;
-  padding: 80px 100px;
+  padding: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
 }
 
+/* =========================
+   PRODUCT IMAGE
+========================= */
 .product-image img {
   width: 420px;
-  border-radius: 12px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease;
+}
+
+.product-image img:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   PRODUCT INFO
+========================= */
+.product-info {
+  max-width: 520px;
 }
 
 .product-info h1 {
-  font-size: 36px;
-  margin-bottom: 16px;
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
 }
 
 .price {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 24px;
 }
 
+/* =========================
+   DESCRIPTION
+========================= */
 .desc {
   color: #555;
-  margin-bottom: 30px;
-  line-height: 1.6;
+  margin-bottom: 40px;
+  line-height: 1.7;
+  font-size: 15px;
 }
 
+/* =========================
+   ADD TO CART BUTTON
+========================= */
 button {
-  padding: 14px 32px;
-  font-size: 16px;
-  background: black;
-  color: white;
+  padding: 16px 36px;
+  font-size: 15px;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
   border: none;
+  border-radius: 40px;
   cursor: pointer;
+  transition: all 0.35s ease;
+  letter-spacing: 0.5px;
+}
+
+/* Hover */
+button:hover {
+  background: #111;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Active click */
+button:active {
+  transform: scale(0.98);
+}
+
+/* Focus (accessibility) */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .product-page {
+    flex-direction: column;
+    gap: 50px;
+    padding: 60px 30px;
+  }
+
+  .product-image img {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .product-info h1 {
+    font-size: 32px;
+  }
 }
