@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kintsugi</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+
+<!-- FEATURED COLLECTION -->
+<section class="featured">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a class="logo" href="/html/home.html">
+            <img src="/assets/img/no-background-logo.png" alt="404 error">
+        </a>
+
+        <nav class="nav-links">
+            <a href="/html/home.html" data-i18n="nav.home">Home</a>
+            <a href="/html/shop.html" data-i18n="nav.shop">Shop</a>
+            <a href="/html/about.html" data-i18n="nav.about">About</a>
+            <a href="/html/contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#" class="cart-link" id="open-cart">
+                🛒 <span id="cart-count"></span>
+            </a>
+            <button class="lang active">EN</button>
+            <button class="lang">MN</button>
+            <button class="theme">🌙</button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1 data-i18n="home.hero.title">Engineered for Movement</h1>
+            <p data-i18n="home.hero.subtitle">Where precision meets freedom</p>
+
+            <div class="hero-buttons">
+                <a href="/html/shop.html"
+                   class="btn primary"
+                   data-i18n="home.hero.shop">
+                   Shop Collection
+                </a>
+
+                <button class="btn outline"
+                        data-i18n="home.hero.explore">
+                        Explore More
+                </button>
+            </div>
+        </div>
+
+        <!-- slider dots (visual only) -->
+        <div class="slider-dots">
+            <span
+              data-bg="/assets/img/hero_1.jpg"
+              data-title="Engineered for Movement"
+              data-subtitle="Where precision meets freedom">
+            </span>
+
+            <span class="active"
+              data-bg="/assets/img/hero_2.jpg"
+              data-title="Designed to Perform"
+              data-subtitle="Built for strength and resilience">
+            </span>
+
+            <span
+              data-bg="/assets/img/hero_3.jpg"
+              data-title="Move Without Limits"
+              data-subtitle="Performance wear for every challenge">
+            </span>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <!-- FEATURED COLLECTION -->
+    <div class="Collection_container">
+        <h2 data-i18n="home.featured.title">Featured Collection</h2>
+        <p class="subtitle" data-i18n="home.featured.subtitle">
+            Precision-crafted performance wear
+        </p>
+
+        <div class="product-grid">
+            <div class="product">
+                <img src="/assets/img/top_1.png" alt="">
+                <h4>Hoodie</h4>
+                <span>$68</span>
+            </div>
+
+            <div class="product">
+                <img src="/assets/img/top_2.png" alt="">
+                <h4>Sweater</h4>
+                <span>$52</span>
+            </div>
+
+            <div class="product">
+                <img src="/assets/img/top_3.png" alt="">
+                <h4>Elite Hoodie</h4>
+                <span>$128</span>
+            </div>
+
+            <div class="product">
+                <img src="/assets/img/top_4.png" alt="">
+                <h4>Sweater</h4>
+                <span>$72</span>
+            </div>
+
+            <div class="product">
+                <img src="/assets/img/top_5.png" alt="">
+                <h4>Hoodie</h4>
+                <span>$92</span>
+            </div>
+
+            <div class="product">
+                <img src="/assets/img/top_6.png" alt="">
+                <h4>Sweater</h4>
+                <span>$98</span>
+            </div>
+
+            <div class="product">
+                <img src="/assets/img/top_7.png" alt="">
+                <h4>Technical Jacket</h4>
+                <span>$168</span>
+            </div>
+
+            <div class="product">
+                <img src="/assets/img/bottom_1.png" alt="">
+                <h4>Panths</h4>
+                <span>$38</span>
+            </div>
+        </div>
+
+        <a href="/html/shop.html"
+           class="outline-btn"
+           data-i18n="home.featured.shop">
+           Shop Collection
+        </a>
+    </div>
+</section>
+
+<!-- SHOP BY CATEGORY -->
+<section class="categories">
+    <h2 data-i18n="home.categories.title">Shop by Category</h2>
+
+    <div class="category-grid">
+        <div class="category">
+            <img src="/assets/img/top_1.png" alt="">
+            <span data-i18n="filter.tops">Tops</span>
+        </div>
+        <div class="category">
+            <img src="/assets/img/bottom_1.png" alt="">
+            <span data-i18n="filter.bottoms">Bottoms</span>
+        </div>
+        <div class="category">
+            <img src="/assets/img/outer_1.png" alt="">
+            <span data-i18n="filter.outerwear">Outerwear</span>
+        </div>
+        <div class="category">
+            <img src="/assets/img/accessories_1.png" alt="">
+            <span data-i18n="filter.accessories">Accessories</span>
+        </div>
+    </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="philosophy">
+    <h2 data-i18n="home.philosophy.title">The Kintsugi Philosophy</h2>
+
+    <p data-i18n="home.philosophy.text">
+        Inspired by the Japanese art of repairing broken pottery with gold...
+    </p>
+
+    <a href="/html/about.html"
+       class="dark-btn"
+       data-i18n="home.philosophy.cta">
+       Our Story
+    </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div class="zuun">
+            <h3>KINTSUGI</h3>
+            <p data-i18n="footer.strenght_text">
+                Strength through resilience. Performance wear that embraces imperfection.
+            </p>
+        </div>
+
+        <div>
+            <h4 data-i18n="footer.shop">Shop</h4>
+            <a href="/html/shop.html" data-i18n="footer.all">All</a>
+            <a href="/html/shop.html" data-i18n="filter.tops">Tops</a>
+            <a href="/html/shop.html" data-i18n="filter.bottoms">Bottoms</a>
+            <a href="/html/shop.html" data-i18n="filter.outerwear">Outerwear</a>
+        </div>
+
+        <div>
+            <h4 data-i18n="footer.about">About</h4>
+            <a href="/html/about.html" data-i18n="footer.our_story">Our Story</a>
+            <a href="/html/about.html" data-i18n="footer.philosophy">Philosophy</a>
+        </div>
+
+        <div>
+            <h4 data-i18n="footer.contact">Contact</h4>
+            <a href="/html/contact.html" data-i18n="footer.contact">Contact</a>
+        </div>
+    </div>
+
+    <p class="copyright">
+        © 2025 Kintsugi. All rights reserved.
+    </p>
+</footer>
+
+<!-- CART MODAL -->
+<div id="cart-modal" class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div id="cart-container"></div>
+    </div>
+</div>
+
+<script type="module" src="/js/pages/main.js"></script>
+<script type="module" src="/js/i18n.js"></script>
+<script type="module" src="/js/pages/home.js"></script>
+<script type="module" src="/js/pages/cart-modal.js"></script>
+
+</body>
+</html>
